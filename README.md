@@ -1,6 +1,6 @@
 # Информация
 
-Юнит майнера [xmrig](/../../xmrig) для systemd. Запускается от имени `root`.
+Юнит майнера [xmrig](https://github.com/search?q=xmrig) для systemd. Запускается от имени `root`.
 
 ## Установка
 
