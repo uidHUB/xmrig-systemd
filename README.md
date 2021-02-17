@@ -1,9 +1,10 @@
 # Информация
 
-Юнит майнера [xmrig](https://github.com/search?q=xmrig) для systemd. Запускается от имени `root`.
+Юнит майнера [xmrig](https://github.com/search?q=xmrig) для systemd. Запускается от имени `root` отдельной сессии screen.
 
 ## Установка
 
+0. Установить `screen`.
 1. Поместить в директорию `/etc/systemd/system` файл `xmrig@.service`.
 2. В файле `xmrig@.service` задать в параметре `ExecStart` путь до `xmrig.run.sh`.
 3. Выполнить команды ниже.
