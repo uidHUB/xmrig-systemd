@@ -1,0 +1,18 @@
+# File:     xmrig@.service
+# Enable:   systemctl enable --now xmrig@root
+# Disable:  systemctl disable --now xmrig@root
+
+[Unit]
+Description=XMRig Monero Miner
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=%i
+ExecStart=/usr/bin/bash /home/apps/xmrig/xmrig.run.sh
+RemainAfterExit=yes
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
